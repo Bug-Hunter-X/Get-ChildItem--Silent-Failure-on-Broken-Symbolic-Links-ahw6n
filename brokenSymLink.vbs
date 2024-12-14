@@ -1,0 +1,1 @@
+Function Get-ChildItem in VBScript doesn't handle symbolic links properly.  If you try to retrieve information about a file that is a symbolic link pointing to a non-existent target, it will not throw an error; instead, it will return unexpected results or fail silently. This can lead to difficult to debug issues where scripts don't behave as expected.
